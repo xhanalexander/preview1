@@ -7,7 +7,7 @@ const dist = path.join(__dirname, '.', 'docs')
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [glsl()],
-  base: './',
+  base: '/vites-project/',
   server: {
     host: true
   },
