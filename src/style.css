@@ -3,10 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: #FFF;
-  font-family: 'Montserrat', sans-serif;
+
+@media (display-mode: standalone) {
+   body {
+      background-color: #FFF;
+      font-family: 'Montserrat', sans-serif; 
+   } 
 }
+
 canvas {
   position: fixed;
   top: 0;
@@ -29,15 +33,16 @@ canvas {
 
 .ttl {
   position: fixed;
-  width: 1%;
+  width: 100%;
   height: 100%;
   color: #FFF;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 2%;
 
-  padding-left: 10px;
+
   mix-blend-mode: difference;
   white-space: nowrap;
 }
@@ -48,7 +53,7 @@ canvas {
 }
 
 .ttl span {
-  font-size: 9px;
+  font-size: 18px;
 }
 
 .ttl a {
